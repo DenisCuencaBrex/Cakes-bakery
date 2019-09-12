@@ -51,14 +51,37 @@
       <div class="carousel-slide">
         <img src="/projects/cake-bakery/images/1.jpg" alt="" />
       </div>
+      <div class="container">
+        <h3 class="white-text">The Taste Of Our Amazing Cakes</h3>
+        <p class="light-text">
+          We can made your dream come true with our amazing cakes and our
+          especial catering
+        </p>
+        <button id="videoBtn">Watch Our Video</button>
+      </div>
+      <button id="prevBtn">
+        <i class="fas fa-angle-left fa-w-16 fa-xl"></i>
+      </button>
+      <button id="nextBtn">
+        <i class="fas fa-angle-right fa-w-16 fa-xl"></i>
+      </button>
     </div>
-    <button id="prevBtn">
-      <i class="fas fa-angle-left fa-w-16 fa-xl"></i>
-    </button>
-    <button id="nextBtn">
-      <i class="fas fa-angle-right fa-w-16 fa-xl"></i>
-    </button>
+    <div class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Cake Bakery</h5>
+          <button id="closeBtn"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="modal-body">
+          <iframe
+            src="https://player.vimeo.com/video/58582025"
+            style="border:none; width: 100%"
+          ></iframe>
+        </div>
+      </div>
+    </div>
     <script src="/projects/cake-bakery/src/dropdown-nav.js"></script>
     <script src="/projects/cake-bakery/src/slider.js"></script>
+    <script src="/projects/cake-bakery/src/modal.js"></script>
   </body>
 </html>
