@@ -23,6 +23,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="/projects/cake-bakery/styles/index.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Cake Bakery</title>
   </head>
   <body>
@@ -108,7 +109,7 @@
         </div>
       </div>
     </div>
-    <section class="about">
+    <div class="about" data-aos="fade-up-right">
       <div class="about-top-text">
         <p class="text-uppercase">a few words</p>
         <h2>Welcome To Our Cake Bakery</h2>
@@ -140,43 +141,66 @@
         alt=""
         class="cake-style"
       />
-    </section>
+    </div>
     <div class="services">
       <div class="center-services">
         <div class="support-grid">
           <i class="far fa-heart"></i>
           <h5 class="text-uppercase">Made with love</h5>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius harum
-            dolorum rerum voluptatum consectetur voluptates, nostrum esse alias
-            corporis quibusdam asperiores architecto officiis aliquid dolores
-            eum, minima quos mollitia! Eligendi?
+            All our cakes are made with great effort and passion, since we want
+            your experience to be the best
           </p>
         </div>
         <div class="support-grid">
           <i class="fas fa-birthday-cake"></i>
           <h5 class="text-uppercase">Seasonal Pastries</h5>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia
-            recusandae aliquid iure repellendus in placeat tempora inventore?
-            Quasi sapiente officiis eaque atque recusandae! Voluptates, corrupti
-            quod eum veritatis nostrum explicabo.
+            Seasonal pastries are only made for a few weeks each year, so get
+            them while you can. They are great!
           </p>
         </div>
         <div class="support-grid">
           <i class="far fa-calendar"></i>
           <h5 class="text-uppercase">EVENT CATERING</h5>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, fuga,
-            quae inventore quidem similique earum hic aliquam necessitatibus
-            molestias sapiente, reiciendis minus quod distinctio eligendi.
-            Pariatur officia adipisci illo est.
+            We make the food of your event or party unforgettable and talk about
+            it forever
           </p>
+        </div>
+      </div>
+    </div>
+    <div id="middle" class="middle-section">
+      <div class="middle-container">
+        <div class="center-img">
+          <img src="/projects/cake-bakery/images/women.png" alt="" />
+        </div>
+        <div class="center-text">
+          <h2>Some Statistical Facts</h2>
+        </div>
+        <div class="counter-container">
+          <div class="counter-box">
+            <p id="popularity-value" class="counter">0</p>
+            <p class="para-text">popularity</p>
+          </div>
+          <div class="counter-box">
+            <p id="customers-value" class="counter">0</p>
+            <p class="para-text">Happy Customers</p>
+          </div>
+          <div class="counter-box">
+            <p id="awards-value" class="counter">0</p>
+            <p class="para-text">Awards Won</p>
+          </div>
         </div>
       </div>
     </div>
     <script src="/projects/cake-bakery/src/dropdown-nav.js"></script>
     <script src="/projects/cake-bakery/src/slider.js"></script>
     <script src="/projects/cake-bakery/src/modal.js"></script>
+    <script src="/projects/cake-bakery/src/countUp.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

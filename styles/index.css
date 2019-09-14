@@ -409,7 +409,7 @@
 
   .cake-style {
     position: absolute;
-    top: 240%;
+    top: 47%;
     z-index: -1;
     left: 2px;
     width: 36%;
@@ -449,5 +449,54 @@
 
   .support-grid p {
     font-size: 12px;
+  }
+
+  .middle-section {
+    background: linear-gradient(#ffc845, #fe3859);
+  }
+
+  .middle-container {
+    text-align: center;
+  }
+
+  .center-img img {
+    width: 100%;
+    padding: 1em;
+  }
+
+  .center-text {
+    text-align: start;
+    padding: 1em;
+  }
+
+  .center-text h2 {
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+  .counter-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3em;
+    width: 100%;
+  }
+
+  .counter-box {
+    padding: 0em 10px;
+  }
+
+  .counter {
+    font-size: 2em;
+    font-weight: 800;
+    color: white;
+  }
+
+  .para-text {
+    font-size: 11px;
+    color: white;
   }
 }
