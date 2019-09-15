@@ -1,27 +1,27 @@
 let i = 0;
 
-theLabel = document.querySelector("#popularity-value");
+label = document.querySelector("#popularity-value");
 let interval = setInterval(function() {
   if (i == 1680) {
     clearInterval(interval);
   }
-  theLabel.innerHTML = i;
+  label.innerHTML = i;
   i++;
 }, 1);
 
-var j = 0;
-theLabel2 = document.querySelector("#customers-value");
-var interval2 = setInterval(function() {
+let j = 0;
+label2 = document.querySelector("#customers-value");
+let interval2 = setInterval(function() {
   if (j == 1200) {
     clearInterval(interval2);
   }
-  theLabel2.innerHTML = j;
+  label2.innerHTML = j;
   j++;
 }, 1);
 
-var k = 0;
+let k = 0;
 label3 = document.querySelector("#awards-value");
-var interval3 = setInterval(function() {
+let interval3 = setInterval(function() {
   if (k == 400) {
     clearInterval(interval3);
   }

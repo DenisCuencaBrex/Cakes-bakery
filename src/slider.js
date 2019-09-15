@@ -1,4 +1,4 @@
-const carouselImages = document.querySelector(".carousel-slide");
+const slideImages = document.querySelector(".slide");
 
 const prevBtn = document.querySelector("#prevBtn");
 const nextBtn = document.querySelector("#nextBtn");
@@ -21,7 +21,7 @@ nextBtn.addEventListener(
     } else {
       x = 1;
     }
-    carouselImages.innerHTML = "<img src=" + images[x - 1] + ">";
+    slideImages.innerHTML = "<img src=" + images[x - 1] + ">";
   }),
 );
 
@@ -31,7 +31,7 @@ prevBtn.addEventListener("click", () => {
   } else {
     x = images.length;
   }
-  carouselImages.innerHTML = "<img src=" + images[x - 1] + ">";
+  slideImages.innerHTML = "<img src=" + images[x - 1] + ">";
 });
 
 setInterval(nextImg, 2000);

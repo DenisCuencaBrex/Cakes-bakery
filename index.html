@@ -48,8 +48,8 @@
         <li><a href="#">Contact Us</a></li>
       </ul>
     </nav>
-    <div class="carousel-container">
-      <div class="carousel-slide">
+    <div class="slide-container">
+      <div class="slide">
         <img src="/projects/cake-bakery/images/1.jpg" alt="" />
       </div>
       <div class="container">
@@ -194,10 +194,50 @@
         </div>
       </div>
     </div>
+    <div class="featured-section">
+      <div class="title-text">
+        <h3>New Products</h3>
+        <p>Check our new cakes, you will enjoy them.</p>
+      </div>
+      <div class="galleryContainer">
+        <div class="slideShowContainer">
+            <div id="playPause" onclick="playPauseSlides()"></div>
+            <div onclick="plusSlides(-1)" class="nextPrevBtn leftArrow"><span class="arrow arrowLeft"></span></div>
+            <div onclick="plusSlides(1)" class="nextPrevBtn rightArrow"><span class="arrow arrowRight"></span></div>
+            <div class="captionTextHolder"><p class="captionText slideTextFromTop"></p></div>
+            <div class="imageHolder">
+                <h4>Strawberry Cakes</h4>
+                <p>One of the classic cakes of the whole world, made with our special strawberry, you are going to tasty the best cake.</p>
+                <img src="/projects/cake-bakery/images/product1.jpg">
+            </div>
+            <div class="imageHolder">
+              <h4>Dessert Cakes</h4>
+              <p>A heady mixture of olive oil and preserved oranges flavors this moist, dense Sicilian dessert, perfect to eat.</p>
+                <img src="/projects/cake-bakery/images/product2.jpg">
+            </div>
+            <div class="imageHolder">
+              <h4>Vainilla Cakes</h4>
+              <p>Thick Italian meringue is sandwiched between moist layers of cake, with sweetened shredded coconut.</p>
+                <img src="/projects/cake-bakery/images/product3.jpg">
+            </div>
+            <div class="imageHolder">
+              <h4>Roller Coaster</h4>
+              <p>A crunchy crust and pudding-like filling make this pie a standout, will make your sense go crazy and can't stop.</p>
+                <img src="/projects/cake-bakery/images/product4.jpg">
+            </div>
+            <div class="imageHolder">
+              <h4>Chocolate Cakes</h4>
+              <p>This time-tested recipe for moist chocolate layer cake has a velvety crumb and rich chocolate icing, for choco lovers.</p>
+                <img src="/projects/cake-bakery/images/product5.jpg">
+            </div>
+        </div>
+        </div>
+    </div>
     <script src="/projects/cake-bakery/src/dropdown-nav.js"></script>
     <script src="/projects/cake-bakery/src/slider.js"></script>
     <script src="/projects/cake-bakery/src/modal.js"></script>
     <script src="/projects/cake-bakery/src/countUp.js"></script>
+    <script src="/projects/cake-bakery/src/carousel.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
