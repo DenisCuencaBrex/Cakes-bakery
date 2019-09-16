@@ -1,5 +1,4 @@
 
-var slideIndex,slides,dots;
 function initGallery(){
     slideIndex = 0;
     slides=document.getElementsByClassName("imageHolder");
@@ -52,6 +51,19 @@ function moveSlide(n){
     }
 
 }
+
+const backImgBtn = document.querySelector("#backImgBtn");
+const nextImgBtn = document.querySelector("#nextImgBtn");
+
+backImgBtn.addEventListener("click", () => {
+    plusSlides(-1)
+  });
+
+nextImgBtn.addEventListener("click", () => {
+    plusSlides(1)
+  });
+
+
 var timer=null;
 function setTimer(){
     timer=setInterval(function () {
