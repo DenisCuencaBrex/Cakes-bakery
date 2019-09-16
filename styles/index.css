@@ -802,6 +802,56 @@
   border-radius: 100px;
 }
 
+footer{
+  background: url(/projects/cake-bakery/images/footer.jpg) no-repeat bottom;
+  -webkit-background-size: cover;
+  position: relative;
+  z-index: 0;
+  padding: 1em;
+}
+
+.footer-container{
+  padding: 1em;
+}
+
+.footer-list{
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+.footer-list li{
+  padding: 0.2em;
+}
+
+.footer-list li a i{
+  border-radius: 50%;
+  background: #fff;
+  color: #000;
+  text-align: center;
+  height: 35px;
+    width: 35px;
+    line-height: 2.4;
+}
+
+.footer-copyright{
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-align: center;
+  color:#f8f9fa !important;
+}
+
+.deniscbrex{
+  text-decoration: none;
+  color: #ffc845;
+}
+
+.chef{
+  position: absolute;
+  width: 20%;
+  top: 18%;
+  left: 0;
+}
 }
 
 @media screen and (min-width: 360px) {
@@ -1134,7 +1184,6 @@
   .last-box {
     list-style: none;
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
   }
@@ -1607,6 +1656,57 @@
   border: 1px solid rgba(0, 0, 0, 0.21);
   letter-spacing: 1px;
   border-radius: 100px;
+}
+
+footer{
+  background: url(/projects/cake-bakery/images/footer.jpg) no-repeat bottom;
+  -webkit-background-size: cover;
+  position: relative;
+  z-index: 0;
+  padding: 1em;
+}
+
+.footer-container{
+  padding: 1em;
+}
+
+.footer-list{
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+.footer-list li{
+  padding: 0.2em;
+}
+
+.footer-list li a i{
+  border-radius: 50%;
+  background: #fff;
+  color: #000;
+  text-align: center;
+  height: 35px;
+    width: 35px;
+    line-height: 2.4;
+}
+
+.footer-copyright{
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-align: center;
+  color:#f8f9fa !important;
+}
+
+.deniscbrex{
+  text-decoration: none;
+  color: #ffc845;
+}
+
+.chef{
+  position: absolute;
+  width: 19%;
+  top: 2%;
+  left: 0;
 }
 
 }
@@ -1941,7 +2041,6 @@
   .last-box {
     list-style: none;
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
   }
@@ -2414,6 +2513,57 @@
   border: 1px solid rgba(0, 0, 0, 0.21);
   letter-spacing: 1px;
   border-radius: 100px;
+}
+
+footer{
+  background: url(/projects/cake-bakery/images/footer.jpg) no-repeat bottom;
+  -webkit-background-size: cover;
+  position: relative;
+  z-index: 0;
+  padding: 1em;
+}
+
+.footer-container{
+  padding: 1em;
+}
+
+.footer-list{
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+.footer-list li{
+  padding: 0.2em;
+}
+
+.footer-list li a i{
+  border-radius: 50%;
+  background: #fff;
+  color: #000;
+  text-align: center;
+  height: 35px;
+    width: 35px;
+    line-height: 2.4;
+}
+
+.footer-copyright{
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-align: center;
+  color:#f8f9fa !important;
+}
+
+.deniscbrex{
+  text-decoration: none;
+  color: #ffc845;
+}
+
+.chef{
+  position: absolute;
+  width: 16%;
+  top: 1%;
+  left: 0;
 }
 
 }
