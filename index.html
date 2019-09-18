@@ -35,6 +35,12 @@
             Cakes Bakery
           </a>
         </h1>
+        <ul class="max-nav-links">
+          <li><a href="">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
       </div>
       <div class="hamburger">
         <div class="line"></div>
@@ -76,7 +82,7 @@
         <div class="modal-body">
           <iframe
             src="https://player.vimeo.com/video/58582025"
-            style="border:none; width: 100%"
+            style="border:none; width: 100%; height: 100%;"
           ></iframe>
         </div>
       </div>
@@ -100,28 +106,28 @@
             <p>Vainilla</p>
             <img src="/projects/cake-bakery/images/img4.png" alt="" />
           </li>
-        </ul>
-        <div class="last-box">
           <li class="cake-box">
-            <p>Muffins</p>
-            <img src="/projects/cake-bakery/images/img5.png" alt="" />
-          </li>
-        </div>
+              <p>Muffins</p>
+              <img src="/projects/cake-bakery/images/img5.png" alt="" />
+            </li>
+        </ul>
       </div>
     </div>
     <div class="about" data-aos="fade-up-right">
       <div class="about-top-text">
-        <p class="text-uppercase">a few words</p>
-        <h2>Welcome To Our Cake Bakery</h2>
-        <h4>
-          We will make you experience a fantastic flavor with our excellent
-          cakes and catering events
-        </h4>
-        <p>
-          With years of experience in the market and the best attitude, we will
-          create the perfect cake or event for you and your family and friends
-        </p>
-        <button class="color-btn about-btn">Learn More</button>
+        <div class="about-width">
+            <p class="text-uppercase">a few words</p>
+            <h2>Welcome To Our Cake Bakery</h2>
+            <h4>
+              We will make you experience a fantastic flavor with our excellent
+              cakes and catering events
+            </h4>
+            <p>
+              With years of experience in the market and the best attitude, we will
+              create the perfect cake or event for you and your family and friends
+            </p>
+            <button class="color-btn about-btn">Learn More</button>
+        </div>
         <div class="about-img">
           <img src="/projects/cake-bakery/images/about.png" alt="" />
         </div>
@@ -175,22 +181,24 @@
         <div class="center-img">
           <img src="/projects/cake-bakery/images/women.png" alt="" />
         </div>
-        <div class="center-text">
-          <h2>Some Statistical Facts</h2>
-        </div>
         <div class="counter-container">
-          <div class="counter-box">
-            <p id="popularity-value" class="counter">0</p>
-            <p class="para-text">popularity</p>
-          </div>
-          <div class="counter-box">
-            <p id="customers-value" class="counter">0</p>
-            <p class="para-text">Happy Customers</p>
-          </div>
-          <div class="counter-box">
-            <p id="awards-value" class="counter">0</p>
-            <p class="para-text">Awards Won</p>
-          </div>
+            <div class="center-text">
+                <h2>Some Statistical Facts</h2>
+              </div>
+              <div class="counter-boxes">
+                  <div class="counter-box">
+                      <p id="popularity-value" class="counter">0</p>
+                      <p class="para-text">popularity</p>
+                    </div>
+                    <div class="counter-box">
+                      <p id="customers-value" class="counter">0</p>
+                      <p class="para-text">Happy Customers</p>
+                    </div>
+                    <div class="counter-box">
+                      <p id="awards-value" class="counter">0</p>
+                      <p class="para-text">Awards Won</p>
+                    </div>
+              </div>
         </div>
       </div>
     </div>
@@ -204,29 +212,54 @@
             <div id="backImgBtn" class="nextPrevBtn leftArrow"><span class="arrow arrowLeft"></span></div>
             <div id="nextImgBtn" class="nextPrevBtn rightArrow"><span class="arrow arrowRight"></span></div>
             <div class="imageHolder">
-                <h4>Strawberry Cakes</h4>
-                <p>One of the classic cakes of the whole world, made with our special strawberry, you are going to tasty the best cake.</p>
-                <img src="/projects/cake-bakery/images/product1.jpg">
+              <div class="flex-text">
+                  <h4>Strawberry Cakes</h4>
+                  <p>One of the classic cakes of the whole world, made with our special strawberry, you are going to tasty the best cake.</p>
+                  <a href="" class="orderBtn">Order Now</a>
+              </div>
+              <div class="img-flex">
+                  <img src="/projects/cake-bakery/images/product1.jpg">
+              </div>
             </div>
             <div class="imageHolder">
-              <h4>Dessert Cakes</h4>
-              <p>A heady mixture of olive oil and preserved oranges flavors this moist, dense Sicilian dessert, perfect to eat.</p>
-                <img src="/projects/cake-bakery/images/product2.jpg">
+                <div class="flex-text">
+                    <h4>Dessert Cakes</h4>
+                    <p>A heady mixture of olive oil and preserved oranges flavors this moist, dense Sicilian dessert, perfect to eat.</p>
+                    <a href="" class="orderBtn">Order Now</a>
+                  </div>
+                  <div class="img-flex">
+                      <img src="/projects/cake-bakery/images/product2.jpg">
+                  </div>
             </div>
             <div class="imageHolder">
-              <h4>Vainilla Cakes</h4>
-              <p>Thick Italian meringue is sandwiched between moist layers of cake, with sweetened shredded coconut.</p>
-                <img src="/projects/cake-bakery/images/product3.jpg">
+                <div class="flex-text">
+                    <h4>Vainilla Cakes</h4>
+                    <p>Thick Italian meringue is sandwiched between moist layers of cake, with sweetened shredded coconut.</p>
+                    <a href="" class="orderBtn">Order Now</a>
+                  </div>
+                  <div class="img-flex">
+                      <img src="/projects/cake-bakery/images/product3.jpg">
+                    </div>
             </div>
             <div class="imageHolder">
-              <h4>Roller Coaster</h4>
-              <p>A crunchy crust and pudding-like filling make this pie a standout, will make your sense go crazy and can't stop.</p>
-                <img src="/projects/cake-bakery/images/product4.jpg">
+                <div class="flex-text">
+                    <h4>Roller Coaster</h4>
+                    <p>A crunchy crust and pudding-like filling make this pie a standout, will make your sense go crazy and can't stop.</p>
+                    <a href="" class="orderBtn">Order Now</a>
+                  </div>
+                  <div class="img-flex">
+                      <img src="/projects/cake-bakery/images/product4.jpg">
+                    </div>
             </div>
             <div class="imageHolder">
-              <h4>Chocolate Cakes</h4>
-              <p>This time-tested recipe for moist chocolate layer cake has a velvety crumb and rich chocolate icing, for choco lovers.</p>
-                <img src="/projects/cake-bakery/images/product5.jpg">
+                <div class="flex-text">
+                    <h4>Chocolate Cakes</h4>
+                    <p>This time-tested recipe for moist chocolate layer cake has a velvety crumb and rich chocolate icing, for choco lovers.</p>
+                    <a href="" class="orderBtn">Order Now</a>
+                  </div>
+                  <div class="img-flex">
+                      <img src="/projects/cake-bakery/images/product5.jpg">
+                    </div>
             </div>
         </div>
         </div>
@@ -291,7 +324,7 @@
                   </div>
                   <div class="news-bottom-text">
                     <p>Sep 12st, 2019</p>
-                    <h5>Little bakers to work!</h5>
+                    <h5>Little bakers lets go to work!</h5>
                   </div>
                 </div>
               </div>
@@ -343,7 +376,7 @@
             <li><a href=""><i class="fab fa-vk"></i></a></li>
           </ul>
         </div>
-        <p class="footer-copyright">© 2018 Cake Bakery. All Rights Reserved | by <a href="deniscbrex.com" class="deniscbrex">Denis Cuenca Brex</a></p>
+        <p class="footer-copyright">© 2019 Cake Bakery. All Rights Reserved | by <a href="deniscbrex.com" class="deniscbrex">Denis Cuenca Brex</a></p>
       </div>
       <img src="/projects/cake-bakery/images/chef.png" alt="" class="chef">
     </footer>
