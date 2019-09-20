@@ -1,5 +1,4 @@
 /* Small phones */
-
 @media screen and (max-width: 320px) {
     *,
     *::after,
@@ -33,6 +32,48 @@
       line-height: 1.9;
       color: #999;
       font-family: "Open Sans", sans-serif;
+    }
+
+    .about-content h3{
+        font-size: 27px;
+        padding: 0.5em;
+    }
+
+    .about-content p{
+        font-size: 13px;
+    }
+
+    .background-cake img{
+        height: 175px;
+        width: 100%;
+    }
+
+    .breadcrumb{
+        background:#e9ecef;
+        margin-top: -0.5em;
+    }
+
+    .breadcrumb ul{
+        display: flex;
+        list-style: none;
+        padding: 1em;
+    }
+
+    .breadcrumb ul li a {
+        color:#fd7272;
+        text-decoration: none;
+    }
+
+    .breadcrumb-item{
+        color:#6c757d;
+    }
+
+    .breadcrumb-item::before {
+        display: inline-block;
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+        color: #6c757d;
+        content: "/";
     }
 
     .navbar {
@@ -137,6 +178,32 @@
       opacity: 1;
     }
 
+    .about-img img{
+        width: 100%;
+    }
+
+    .about-content{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        padding: 1em;
+    }
+
+    .about-content h3{
+        font-size: 27px;
+    padding: 0.5em;
+    }
+
+    .about-content p{
+        font-size: 13px;
+    }
+
+    .about-grid{
+        margin-top: 1em;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        border-radius: 0.25rem;
+    }
+
     .services {
       border-top: 1px solid #dee2e6 !important;
       padding-top: 2em;
@@ -150,7 +217,7 @@
 
     .fa-heart,
     .fa-birthday-cake,
-    .fa-calendar {
+    .fa-calendar, .fa-glass-martini {
       font-size: 45px;
       color: #fe3859;
       background: -webkit-linear-gradient(#ffc845, #fe3859);
@@ -332,6 +399,39 @@
       font-family: "Open Sans", sans-serif;
     }
 
+    .background-cake img{
+        height: 175px;
+        width: 100%;
+    }
+
+    .breadcrumb{
+        background:#e9ecef;
+        margin-top: -0.5em;
+    }
+
+    .breadcrumb ul{
+        display: flex;
+        list-style: none;
+        padding: 1em;
+    }
+
+    .breadcrumb ul li a {
+        color:#fd7272;
+        text-decoration: none;
+    }
+
+    .breadcrumb-item{
+        color:#6c757d;
+    }
+
+    .breadcrumb-item::before {
+        display: inline-block;
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+        color: #6c757d;
+        content: "/";
+    }
+
     .navbar {
       display: flex;
       justify-content: space-between;
@@ -434,6 +534,32 @@
       opacity: 1;
     }
 
+    .about-img img{
+        width: 100%;
+    }
+
+    .about-content{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        padding: 1em;
+    }
+
+    .about-content h3{
+        font-size: 27px;
+        padding: 0.5em;
+    }
+
+    .about-content p{
+        font-size: 13px;
+    }
+
+    .about-grid{
+        margin-top: 1em;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        border-radius: 0.25rem;
+    }
+
     .services {
       border-top: 1px solid #dee2e6 !important;
       padding-top: 2em;
@@ -447,7 +573,7 @@
 
     .fa-heart,
     .fa-birthday-cake,
-    .fa-calendar {
+    .fa-calendar, .fa-glass-martini  {
       font-size: 45px;
       color: #fe3859;
       background: -webkit-linear-gradient(#ffc845, #fe3859);
@@ -612,6 +738,11 @@
       font-family: "Open Sans", sans-serif;
     }
 
+    .background-cake img{
+        height: 175px;
+        width: 100%;
+    }
+
     .navbar {
       display: flex;
       justify-content: space-between;
@@ -619,6 +750,34 @@
       width: 100%;
       flex-wrap: wrap;
       z-index: 9999;
+    }
+
+    .breadcrumb{
+        background:#e9ecef;
+        margin-top: -0.5em;
+    }
+
+    .breadcrumb ul{
+        display: flex;
+        list-style: none;
+        padding: 1em;
+    }
+
+    .breadcrumb ul li a {
+        color:#fd7272;
+        text-decoration: none;
+    }
+
+    .breadcrumb-item{
+        color:#6c757d;
+    }
+
+    .breadcrumb-item::before {
+        display: inline-block;
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+        color: #6c757d;
+        content: "/";
     }
 
     .logo {
@@ -714,6 +873,32 @@
       opacity: 1;
     }
 
+    .about-img img{
+        width: 100%;
+    }
+
+    .about-content{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        padding: 1em;
+    }
+
+    .about-content h3{
+        font-size: 27px;
+        padding: 0.5em;
+    }
+
+    .about-content p{
+        font-size: 13px;
+    }
+
+    .about-grid{
+        margin-top: 1em;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        border-radius: 0.25rem;
+    }
+
     .services {
       border-top: 1px solid #dee2e6 !important;
       padding-top: 2em;
@@ -727,7 +912,7 @@
 
     .fa-heart,
     .fa-birthday-cake,
-    .fa-calendar {
+    .fa-calendar, .fa-glass-martini  {
       font-size: 45px;
       color: #fe3859;
       background: -webkit-linear-gradient(#ffc845, #fe3859);
@@ -882,6 +1067,39 @@
       line-height: 1.2;
     }
 
+    .background-cake img{
+        height: 175px;
+        width: 100%;
+    }
+
+    .breadcrumb{
+        background:#e9ecef;
+        margin-top: -0.5em;
+    }
+
+    .breadcrumb ul{
+        display: flex;
+        list-style: none;
+        padding: 1em;
+    }
+
+    .breadcrumb ul li a {
+        color:#fd7272;
+        text-decoration: none;
+    }
+
+    .breadcrumb-item{
+        color:#6c757d;
+    }
+
+    .breadcrumb-item::before {
+        display: inline-block;
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+        color: #6c757d;
+        content: "/";
+    }
+
     p {
       margin: 0;
       padding: 0;
@@ -994,6 +1212,28 @@
       opacity: 1;
     }
 
+    .about-img img{
+        width: 100%;
+    }
+
+    .about-content h3{
+        font-size: 27px;
+        padding: 0.5em;
+    }
+
+    .about-content p{
+        font-size: 13px;
+    }
+
+    .about-boxes{
+        margin: 1em;
+    }
+
+    .about-grid{
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        border-radius: 0.25rem;
+    }
+
     .services {
       border-top: 1px solid #dee2e6 !important;
       padding-top: 2em;
@@ -1007,7 +1247,7 @@
 
     .fa-heart,
     .fa-birthday-cake,
-    .fa-calendar {
+    .fa-calendar, .fa-glass-martini  {
       font-size: 52px;
       color: #fe3859;
       background: -webkit-linear-gradient(#ffc845, #fe3859);
@@ -1173,6 +1413,39 @@
       font-family: "Open Sans", sans-serif;
     }
 
+    .background-cake{
+        height: 220px;
+        width: 100%;
+    }
+
+    .breadcrumb{
+        background:#e9ecef;
+        margin-top: -3em;
+    }
+
+    .breadcrumb ul{
+        display: flex;
+        list-style: none;
+        padding: 1em;
+    }
+
+    .breadcrumb ul li a {
+        color:#fd7272;
+        text-decoration: none;
+    }
+
+    .breadcrumb-item{
+        color:#6c757d;
+    }
+
+    .breadcrumb-item::before {
+        display: inline-block;
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+        color: #6c757d;
+        content: "/";
+    }
+
     .navbar {
       display: block;
       position: absolute;
@@ -1292,6 +1565,20 @@
       opacity: 1;
     }
 
+    .about{
+        display: flex;
+    }
+
+    .about-img img{
+        width: 100%;
+    }
+
+    .about-grid{
+        margin-top: 1em;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        border-radius: 0.25rem;
+    }
+
     .services {
       border-top: 1px solid #dee2e6 !important;
       padding-top: 2em;
@@ -1309,7 +1596,7 @@
 
     .fa-heart,
     .fa-birthday-cake,
-    .fa-calendar {
+    .fa-calendar, .fa-glass-martini  {
       font-size: 52px;
       color: #fe3859;
       background: -webkit-linear-gradient(#ffc845, #fe3859);
@@ -1474,6 +1761,42 @@
       font-family: "Open Sans", sans-serif;
     }
 
+
+    .background-cake img{
+        height: 220px;
+        width: 100%;
+    }
+
+    .breadcrumb{
+        background:#e9ecef;
+        margin-top: -0.5em;
+    }
+
+    .breadcrumb ul{
+        display: flex;
+        list-style: none;
+        padding: 1em;
+        margin-top: 0.5em;
+    }
+
+    .breadcrumb ul li a {
+        color:#fd7272;
+        text-decoration: none;
+    }
+
+    .breadcrumb-item{
+        color:#6c757d;
+    }
+
+    .breadcrumb-item::before {
+        display: inline-block;
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+        color: #6c757d;
+        content: "/";
+    }
+
+
     .navbar {
       display: block;
       position: absolute;
@@ -1593,6 +1916,20 @@
       opacity: 1;
     }
 
+    .about{
+        display: flex;
+    }
+
+    .about-img img{
+        width: 100%;
+    }
+
+    .about-grid{
+        margin-top: 1em;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        border-radius: 0.25rem;
+    }
+
     .services {
       border-top: 1px solid #dee2e6 !important;
       padding-top: 2em;
@@ -1610,7 +1947,7 @@
 
     .fa-heart,
     .fa-birthday-cake,
-    .fa-calendar {
+    .fa-calendar, .fa-glass-martini  {
       font-size: 52px;
       color: #fe3859;
       background: -webkit-linear-gradient(#ffc845, #fe3859);
@@ -1738,7 +2075,6 @@
 
   }
 
-
   @media screen and (min-width: 1440px){
     *,
     *::after,
@@ -1772,6 +2108,39 @@
       line-height: 1.9;
       color: #999;
       font-family: "Open Sans", sans-serif;
+    }
+
+    .background-cake img{
+        height: 220px;
+        width: 100%;
+    }
+
+    .breadcrumb{
+        background:#e9ecef;
+        margin-top: -0.5em;
+    }
+
+    .breadcrumb ul{
+        display: flex;
+        list-style: none;
+        padding: 1em;
+    }
+
+    .breadcrumb ul li a {
+        color:#fd7272;
+        text-decoration: none;
+    }
+
+    .breadcrumb-item{
+        color:#6c757d;
+    }
+
+    .breadcrumb-item::before {
+        display: inline-block;
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+        color: #6c757d;
+        content: "/";
     }
 
     .navbar {
@@ -1893,6 +2262,20 @@
       opacity: 1;
     }
 
+    .about{
+        display: flex;
+    }
+
+    .about-img img{
+        width: 100%;
+    }
+
+    .about-grid{
+        margin-top: 1em;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        border-radius: 0.25rem;
+    }
+
     .services {
       border-top: 1px solid #dee2e6 !important;
       padding-top: 2em;
@@ -1910,7 +2293,7 @@
 
     .fa-heart,
     .fa-birthday-cake,
-    .fa-calendar {
+    .fa-calendar, .fa-glass-martini  {
       font-size: 52px;
       color: #fe3859;
       background: -webkit-linear-gradient(#ffc845, #fe3859);
