@@ -1,0 +1,2424 @@
+/* Small phones */
+@media screen and (max-width: 320px) {
+    *,
+    *::after,
+    *::before {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      font-family: "Open Sans", sans-serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      padding: 0;
+      margin: 0;
+      font-family: "Oxygen", sans-serif;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+      font-size: 15px;
+      letter-spacing: 1px;
+      line-height: 1.9;
+      color: #999;
+      font-family: "Open Sans", sans-serif;
+    }
+
+    .about-content h3{
+        font-size: 27px;
+        padding: 0.5em;
+    }
+
+    .about-content p{
+        font-size: 13px;
+    }
+
+    .background-cake img{
+        height: 175px;
+        width: 100%;
+    }
+
+    .breadcrumb{
+        background:#e9ecef;
+        margin-top: -0.5em;
+    }
+
+    .breadcrumb ul{
+        display: flex;
+        list-style: none;
+        padding: 1em;
+    }
+
+    .breadcrumb ul li a {
+        color:#fd7272;
+        text-decoration: none;
+    }
+
+    .breadcrumb-item{
+        color:#6c757d;
+    }
+
+    .breadcrumb-item::before {
+        display: inline-block;
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+        color: #6c757d;
+        content: "/";
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      width: 100%;
+      flex-wrap: wrap;
+      z-index: 9999;
+    }
+
+    .max-nav-links{
+      display:none;
+    }
+
+    .logo {
+      display: flex;
+      margin: 1em;
+    }
+
+    .logo img {
+      width: 15%;
+    }
+
+    .navbar-brand {
+      font-size: 24px;
+      text-decoration: none;
+      color: white;
+      font-family: "Pacifico", cursive;
+      font-weight: 100;
+    }
+
+    .line {
+      width: 30px;
+      height: 3px;
+      background: white;
+      margin: 5px;
+    }
+    nav {
+      position: relative;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      width: 50%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      margin-left: auto;
+    }
+
+    .nav-links li a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .hamburger {
+      position: absolute;
+      cursor: pointer;
+      right: 6%;
+      top: 33%;
+      transform: translate(-5%, -50%);
+      z-index: 2;
+    }
+
+    .nav-links {
+      position: absolute;
+      background: linear-gradient(to right, #ffc845, #fe3859);
+      height: 100vh;
+      width: 100%;
+      flex-direction: column;
+      clip-path: circle(11% at 88% 2%);
+      -webkit-clip-path: circle(11% at 88% 3%);
+      transition: all 1s ease-out;
+      pointer-events: none;
+    }
+    .nav-links.open {
+      clip-path: circle(1000px at 90% -10%);
+      -webkit-clip-path: circle(1000px at 90% -10%);
+      pointer-events: all;
+      position: fixed;
+    }
+    .nav-links li {
+      opacity: 0;
+      padding: 1em;
+    }
+    .nav-links li a {
+      font-size: 22px;
+    }
+    .nav-links li:nth-child(1) {
+      transition: all 0.5s ease 0.2s;
+    }
+    .nav-links li:nth-child(2) {
+      transition: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(3) {
+      transition: all 0.5s ease 0.6s;
+    }
+    li.fade {
+      opacity: 1;
+    }
+
+    .about-img img{
+        width: 100%;
+    }
+
+    .about-content{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        padding: 1em;
+    }
+
+    .about-content h3{
+        font-size: 27px;
+    padding: 0.5em;
+    }
+
+    .about-content p{
+        font-size: 13px;
+    }
+
+    .about-grid{
+        margin-top: 1em;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        border-radius: 0.25rem;
+    }
+
+    .services {
+      border-top: 1px solid #dee2e6 !important;
+      padding-top: 2em;
+      text-align: center;
+      background-color: #f8f9fa !important;
+    }
+
+    .support-grid {
+      padding: 1em;
+    }
+
+    .fa-heart,
+    .fa-birthday-cake,
+    .fa-calendar, .fa-glass-martini {
+      font-size: 45px;
+      color: #fe3859;
+      background: -webkit-linear-gradient(#ffc845, #fe3859);
+      background: -o-linear-gradient(#ffc845, #fe3859);
+      background: -moz-linear-gradient(#ffc845, #fe3859);
+      background: linear-gradient(#ffc845, #fe3859);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .support-grid h5 {
+      color: #343a40 !important;
+      font-size: 20px;
+      letter-spacing: 1px;
+      text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.48);
+      padding: 1em;
+    }
+
+    .support-grid p {
+      font-size: 12px;
+    }
+
+    .middle-section {
+      background: linear-gradient(#ffc845, #fe3859);
+    }
+
+    .middle-container {
+      text-align: center;
+    }
+
+    .center-img img {
+      width: 100%;
+      padding: 1em;
+    }
+
+    .center-text {
+      text-align: start;
+      padding: 1em;
+    }
+
+    .center-text h2 {
+      font-size: 20px;
+      color: white;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+
+    .counter-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 3em;
+      width: 100%;
+    }
+
+    .counter-box {
+      padding: 0em 10px;
+    }
+
+    .counter-boxes{
+      display:flex;
+    }
+
+    .counter {
+      font-size: 2em;
+      font-weight: 800;
+      color: white;
+    }
+
+    .para-text {
+      font-size: 11px;
+      color: white;
+    }
+
+    .featured-section{
+      padding-top: 3em;
+    }
+
+    .title-text{
+      text-align: center;
+    }
+
+    .title-text h3{
+      font-size: 26px;
+      color:#343a40;
+      margin-bottom: 0.3em;
+    }
+
+    .title-text p{
+      font-size: 12px;
+    }
+
+  footer{
+    background: url(/projects/cake-bakery/images/footer.jpg) no-repeat bottom;
+    -webkit-background-size: cover;
+    position: relative;
+    z-index: 0;
+    padding: 1em;
+  }
+
+  .footer-container{
+    padding: 1em;
+  }
+
+  .footer-list{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+  }
+
+  .footer-list li{
+    padding: 0.2em;
+  }
+
+  .footer-list li a i{
+    border-radius: 50%;
+    background: #fff;
+    color: #000;
+    text-align: center;
+    height: 35px;
+      width: 35px;
+      line-height: 2.4;
+  }
+
+  .footer-copyright{
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-align: center;
+    color:#f8f9fa !important;
+  }
+
+  .deniscbrex{
+    text-decoration: none;
+    color: #ffc845;
+  }
+
+  .chef{
+    position: absolute;
+    width: 20%;
+    top: 18%;
+    left: 0;
+  }
+  }
+
+  /* medium phones */
+  @media screen and (min-width: 360px) {
+    *,
+    *::after,
+    *::before {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      font-family: "Open Sans", sans-serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      padding: 0;
+      margin: 0;
+      font-family: "Oxygen", sans-serif;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+      font-size: 15px;
+      letter-spacing: 1px;
+      line-height: 1.9;
+      color: #999;
+      font-family: "Open Sans", sans-serif;
+    }
+
+    .background-cake img{
+        height: 175px;
+        width: 100%;
+    }
+
+    .breadcrumb{
+        background:#e9ecef;
+        margin-top: -0.5em;
+    }
+
+    .breadcrumb ul{
+        display: flex;
+        list-style: none;
+        padding: 1em;
+    }
+
+    .breadcrumb ul li a {
+        color:#fd7272;
+        text-decoration: none;
+    }
+
+    .breadcrumb-item{
+        color:#6c757d;
+    }
+
+    .breadcrumb-item::before {
+        display: inline-block;
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+        color: #6c757d;
+        content: "/";
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      width: 100%;
+      flex-wrap: wrap;
+      z-index: 9999;
+    }
+
+    .max-nav-links{
+      display:none;
+    }
+
+    .logo {
+      display: flex;
+      margin: 1em;
+    }
+
+    .logo img {
+      width: 15%;
+    }
+
+    .navbar-brand {
+      font-size: 24px;
+      text-decoration: none;
+      color: white;
+      font-family: "Pacifico", cursive;
+      font-weight: 100;
+    }
+
+    .line {
+      width: 30px;
+      height: 3px;
+      background: white;
+      margin: 5px;
+    }
+    nav {
+      position: relative;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      width: 50%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      margin-left: auto;
+    }
+
+    .nav-links li a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .hamburger {
+      position: absolute;
+      cursor: pointer;
+      right: 6%;
+      top: 33%;
+      transform: translate(-5%, -50%);
+      z-index: 2;
+    }
+
+    .nav-links {
+      position: absolute;
+      background: linear-gradient(to right, #ffc845, #fe3859);
+      height: 100vh;
+      width: 100%;
+      flex-direction: column;
+      clip-path: circle(11% at 88% 2%);
+      -webkit-clip-path: circle(11% at 88% 3%);
+      transition: all 1s ease-out;
+      pointer-events: none;
+    }
+    .nav-links.open {
+      clip-path: circle(1000px at 90% -10%);
+      -webkit-clip-path: circle(1000px at 90% -10%);
+      pointer-events: all;
+      position: fixed;
+    }
+    .nav-links li {
+      opacity: 0;
+      padding: 1em;
+    }
+    .nav-links li a {
+      font-size: 22px;
+    }
+    .nav-links li:nth-child(1) {
+      transition: all 0.5s ease 0.2s;
+    }
+    .nav-links li:nth-child(2) {
+      transition: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(3) {
+      transition: all 0.5s ease 0.6s;
+    }
+    li.fade {
+      opacity: 1;
+    }
+
+    .about-img img{
+        width: 100%;
+    }
+
+    .about-content{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        padding: 1em;
+    }
+
+    .about-content h3{
+        font-size: 27px;
+        padding: 0.5em;
+    }
+
+    .about-content p{
+        font-size: 13px;
+    }
+
+    .about-grid{
+        margin-top: 1em;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        border-radius: 0.25rem;
+    }
+
+    .services {
+      border-top: 1px solid #dee2e6 !important;
+      padding-top: 2em;
+      text-align: center;
+      background-color: #f8f9fa !important;
+    }
+
+    .support-grid {
+      padding: 1em;
+    }
+
+    .fa-heart,
+    .fa-birthday-cake,
+    .fa-calendar, .fa-glass-martini  {
+      font-size: 45px;
+      color: #fe3859;
+      background: -webkit-linear-gradient(#ffc845, #fe3859);
+      background: -o-linear-gradient(#ffc845, #fe3859);
+      background: -moz-linear-gradient(#ffc845, #fe3859);
+      background: linear-gradient(#ffc845, #fe3859);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .support-grid h5 {
+      color: #343a40 !important;
+      font-size: 20px;
+      letter-spacing: 1px;
+      text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.48);
+      padding: 1em;
+    }
+
+    .support-grid p {
+      font-size: 12px;
+    }
+
+    .middle-section {
+      background: linear-gradient(#ffc845, #fe3859);
+    }
+
+    .middle-container {
+      text-align: center;
+    }
+
+    .center-img img {
+      width: 100%;
+      padding: 1em;
+    }
+
+    .center-text {
+      text-align: start;
+      padding: 1em;
+    }
+
+    .center-text h2 {
+      font-size: 20px;
+      color: white;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+
+    .counter-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 3em;
+      width: 100%;
+    }
+
+    .counter-box {
+      padding: 0em 10px;
+    }
+
+    .counter-boxes{
+      display:flex;
+    }
+
+    .counter {
+      font-size: 2em;
+      font-weight: 800;
+      color: white;
+    }
+
+    .para-text {
+      font-size: 11px;
+      color: white;
+    }
+
+  footer{
+    background: url(/projects/cake-bakery/images/footer.jpg) no-repeat bottom;
+    -webkit-background-size: cover;
+    position: relative;
+    z-index: 0;
+    padding: 1em;
+  }
+
+  .footer-container{
+    padding: 1em;
+  }
+
+  .footer-list{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+  }
+
+  .footer-list li{
+    padding: 0.2em;
+  }
+
+  .footer-list li a i{
+    border-radius: 50%;
+    background: #fff;
+    color: #000;
+    text-align: center;
+    height: 35px;
+      width: 35px;
+      line-height: 2.4;
+  }
+
+  .footer-copyright{
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-align: center;
+    color:#f8f9fa !important;
+  }
+
+  .deniscbrex{
+    text-decoration: none;
+    color: #ffc845;
+  }
+
+  .chef{
+    position: absolute;
+    width: 19%;
+    top: 2%;
+    left: 0;
+  }
+
+  }
+
+  /* large phones */
+  @media screen and (min-width: 425px) {
+    *,
+    *::after,
+    *::before {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      font-family: "Open Sans", sans-serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      padding: 0;
+      margin: 0;
+      font-family: "Oxygen", sans-serif;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+      font-size: 15px;
+      letter-spacing: 1px;
+      line-height: 1.9;
+      color: #999;
+      font-family: "Open Sans", sans-serif;
+    }
+
+    .background-cake img{
+        height: 175px;
+        width: 100%;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      width: 100%;
+      flex-wrap: wrap;
+      z-index: 9999;
+    }
+
+    .breadcrumb{
+        background:#e9ecef;
+        margin-top: -0.5em;
+    }
+
+    .breadcrumb ul{
+        display: flex;
+        list-style: none;
+        padding: 1em;
+    }
+
+    .breadcrumb ul li a {
+        color:#fd7272;
+        text-decoration: none;
+    }
+
+    .breadcrumb-item{
+        color:#6c757d;
+    }
+
+    .breadcrumb-item::before {
+        display: inline-block;
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+        color: #6c757d;
+        content: "/";
+    }
+
+    .logo {
+      display: flex;
+      margin: 1em;
+    }
+
+    .logo img {
+      width: 15%;
+    }
+
+    .navbar-brand {
+      font-size: 24px;
+      text-decoration: none;
+      color: white;
+      font-family: "Pacifico", cursive;
+      font-weight: 100;
+    }
+
+    .line {
+      width: 30px;
+      height: 3px;
+      background: white;
+      margin: 5px;
+    }
+    nav {
+      position: relative;
+    }
+
+    .max-nav-links{
+      display:none;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      width: 50%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      margin-left: auto;
+    }
+
+    .nav-links li a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .hamburger {
+      position: absolute;
+      cursor: pointer;
+      right: 7%;
+      top: 33%;
+      transform: translate(-5%, -50%);
+      z-index: 2;
+    }
+
+    .nav-links {
+      position: absolute;
+      background: linear-gradient(to right, #ffc845, #fe3859);
+      height: 100vh;
+      width: 100%;
+      flex-direction: column;
+      clip-path: circle(9% at 88% 2%);
+      -webkit-clip-path: circle(9% at 88% 3%);
+      transition: all 1s ease-out;
+      pointer-events: none;
+    }
+    .nav-links.open {
+      clip-path: circle(1000px at 90% -10%);
+      -webkit-clip-path: circle(1000px at 90% -10%);
+      pointer-events: all;
+      position: fixed;
+    }
+    .nav-links li {
+      opacity: 0;
+      padding: 1em;
+    }
+    .nav-links li a {
+      font-size: 22px;
+    }
+    .nav-links li:nth-child(1) {
+      transition: all 0.5s ease 0.2s;
+    }
+    .nav-links li:nth-child(2) {
+      transition: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(3) {
+      transition: all 0.5s ease 0.6s;
+    }
+    li.fade {
+      opacity: 1;
+    }
+
+    .about-img img{
+        width: 100%;
+    }
+
+    .about-content{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        padding: 1em;
+    }
+
+    .about-content h3{
+        font-size: 27px;
+        padding: 0.5em;
+    }
+
+    .about-content p{
+        font-size: 13px;
+    }
+
+    .about-grid{
+        margin-top: 1em;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        border-radius: 0.25rem;
+    }
+
+    .services {
+      border-top: 1px solid #dee2e6 !important;
+      padding-top: 2em;
+      text-align: center;
+      background-color: #f8f9fa !important;
+    }
+
+    .support-grid {
+      padding: 1em;
+    }
+
+    .fa-heart,
+    .fa-birthday-cake,
+    .fa-calendar, .fa-glass-martini  {
+      font-size: 45px;
+      color: #fe3859;
+      background: -webkit-linear-gradient(#ffc845, #fe3859);
+      background: -o-linear-gradient(#ffc845, #fe3859);
+      background: -moz-linear-gradient(#ffc845, #fe3859);
+      background: linear-gradient(#ffc845, #fe3859);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .support-grid h5 {
+      color: #343a40 !important;
+      font-size: 20px;
+      letter-spacing: 1px;
+      text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.48);
+      padding: 1em;
+    }
+
+    .support-grid p {
+      font-size: 12px;
+    }
+
+    .middle-section {
+      background: linear-gradient(#ffc845, #fe3859);
+    }
+
+    .middle-container {
+      text-align: center;
+    }
+
+    .center-img img {
+      width: 100%;
+      padding: 1em;
+    }
+
+    .center-text {
+      text-align: start;
+      padding: 1em;
+    }
+
+    .center-text h2 {
+      font-size: 20px;
+      color: white;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+
+    .counter-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 3em;
+      width: 100%;
+    }
+
+    .counter-box {
+      padding: 0em 10px;
+    }
+
+    .counter-boxes{
+      display:flex;
+    }
+
+    .counter {
+      font-size: 2em;
+      font-weight: 800;
+      color: white;
+    }
+
+    .para-text {
+      font-size: 11px;
+      color: white;
+    }
+
+  footer{
+    background: url(/projects/cake-bakery/images/footer.jpg) no-repeat bottom;
+    -webkit-background-size: cover;
+    position: relative;
+    z-index: 0;
+    padding: 1em;
+  }
+
+  .footer-container{
+    padding: 1em;
+  }
+
+  .footer-list{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+  }
+
+  .footer-list li{
+    padding: 0.2em;
+  }
+
+  .footer-list li a i{
+    border-radius: 50%;
+    background: #fff;
+    color: #000;
+    text-align: center;
+    height: 35px;
+      width: 35px;
+      line-height: 2.4;
+  }
+
+  .footer-copyright{
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-align: center;
+    color:#f8f9fa !important;
+  }
+
+  .deniscbrex{
+    text-decoration: none;
+    color: #ffc845;
+  }
+
+  .chef{
+    position: absolute;
+    width: 16%;
+    top: 1%;
+    left: 0;
+  }
+
+  }
+
+  /*tablet*/
+  @media screen and (min-width: 768px){
+    *,
+    *::after,
+    *::before {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      font-family: "Open Sans", sans-serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      padding: 0;
+      margin: 0;
+      font-family: "Oxygen", sans-serif;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+
+    .background-cake img{
+        height: 175px;
+        width: 100%;
+    }
+
+    .breadcrumb{
+        background:#e9ecef;
+        margin-top: -0.5em;
+    }
+
+    .breadcrumb ul{
+        display: flex;
+        list-style: none;
+        padding: 1em;
+    }
+
+    .breadcrumb ul li a {
+        color:#fd7272;
+        text-decoration: none;
+    }
+
+    .breadcrumb-item{
+        color:#6c757d;
+    }
+
+    .breadcrumb-item::before {
+        display: inline-block;
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+        color: #6c757d;
+        content: "/";
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+      font-size: 15px;
+      letter-spacing: 1px;
+      line-height: 1.9;
+      color: #999;
+      font-family: "Open Sans", sans-serif;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      width: 100%;
+      flex-wrap: wrap;
+      z-index: 9999;
+    }
+
+    .max-nav-links{
+      display:none;
+    }
+
+    .logo {
+      display: flex;
+      margin: 1em;
+    }
+
+    .logo img {
+      width: 18%;
+    }
+
+    .navbar-brand {
+      font-size: 30px;
+      text-decoration: none;
+      color: white;
+      font-family: "Pacifico", cursive;
+      font-weight: 100;
+    }
+
+    .line {
+      width: 30px;
+      height: 3px;
+      background: white;
+      margin: 5px;
+    }
+    nav {
+      position: relative;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      width: 50%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      margin-left: auto;
+    }
+
+    .nav-links li a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .hamburger {
+      position: absolute;
+      cursor: pointer;
+      right: 9.1%;
+      top: 29%;
+      transform: translate(-5%, -50%);
+      z-index: 2;
+    }
+
+    .nav-links {
+      position: absolute;
+      background: linear-gradient(to right, #ffc845, #fe3859);
+      height: 100vh;
+      width: 100%;
+      flex-direction: column;
+      clip-path: circle(7% at 88% 2%);
+      -webkit-clip-path: circle(7% at 88% 3%);
+      transition: all 1s ease-out;
+      pointer-events: none;
+    }
+    .nav-links.open {
+      clip-path: circle(1000px at 90% -10%);
+      -webkit-clip-path: circle(1000px at 78% -10%);
+      pointer-events: all;
+      position: fixed;
+    }
+    .nav-links li {
+      opacity: 0;
+      padding: 1em;
+    }
+    .nav-links li a {
+      font-size: 22px;
+    }
+    .nav-links li:nth-child(1) {
+      transition: all 0.5s ease 0.2s;
+    }
+    .nav-links li:nth-child(2) {
+      transition: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(3) {
+      transition: all 0.5s ease 0.6s;
+    }
+    li.fade {
+      opacity: 1;
+    }
+
+    .about-img img{
+        width: 100%;
+    }
+
+    .about-content h3{
+        font-size: 27px;
+        padding: 0.5em;
+    }
+
+    .about-content p{
+        font-size: 13px;
+    }
+
+    .about-boxes{
+        margin: 1em;
+    }
+
+    .about-grid{
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        border-radius: 0.25rem;
+    }
+
+    .services {
+      border-top: 1px solid #dee2e6 !important;
+      padding-top: 2em;
+      text-align: center;
+      background-color: #f8f9fa !important;
+    }
+
+    .support-grid {
+      padding: 1em;
+    }
+
+    .fa-heart,
+    .fa-birthday-cake,
+    .fa-calendar, .fa-glass-martini  {
+      font-size: 52px;
+      color: #fe3859;
+      background: -webkit-linear-gradient(#ffc845, #fe3859);
+      background: -o-linear-gradient(#ffc845, #fe3859);
+      background: -moz-linear-gradient(#ffc845, #fe3859);
+      background: linear-gradient(#ffc845, #fe3859);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .support-grid h5 {
+      color: #343a40 !important;
+      font-size: 23px;
+      letter-spacing: 1px;
+      text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.48);
+      padding: 1em;
+    }
+
+    .support-grid p {
+      font-size: 16px;
+    }
+
+    .middle-section {
+      background: linear-gradient(#ffc845, #fe3859);
+    }
+
+    .middle-container {
+      text-align: center;
+    }
+
+    .center-img img {
+      width: 100%;
+      padding: 1em;
+    }
+
+    .center-text {
+      text-align: start;
+      padding: 1em;
+    }
+
+    .center-text h2 {
+      font-size: 26px;
+      color: white;
+      font-weight: 500;
+      letter-spacing: 1px;
+      line-height: 1.2;
+    }
+
+    .counter-container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+      padding-bottom: 3em;
+      width: 100%;
+    }
+
+    .counter-box {
+      padding: 0em 50px;
+    }
+
+  .counter-boxes{
+    display: flex;
+  }
+
+    .counter {
+      font-size: 2em;
+      font-weight: 800;
+      color: white;
+    }
+
+    .para-text {
+      font-size: 18px;
+      color: white;
+    }
+
+  footer{
+    background: url(/projects/cake-bakery/images/footer.jpg) no-repeat bottom;
+    -webkit-background-size: cover;
+    position: relative;
+    z-index: 0;
+    padding: 1.5em;
+  }
+
+  .footer-container{
+    padding: 1em;
+  }
+
+  .footer-list{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+  }
+
+  .footer-list li{
+    padding: 0.8em;
+  }
+
+  .footer-list li a i{
+    border-radius: 50%;
+    background: #fff;
+    color: #000;
+    text-align: center;
+    height: 39px;
+      width: 45px;
+      line-height: 2.4;
+  }
+
+  .footer-copyright{
+    font-size: 17px;
+    letter-spacing: 1px;
+    text-align: center;
+    color:#f8f9fa !important;
+  }
+
+  .deniscbrex{
+    text-decoration: none;
+    color: #ffc845;
+  }
+
+  .chef{
+    position: absolute;
+    width: 14%;
+    top: 1%;
+    left: 0;
+  }
+
+  }
+
+  @media screen and (min-width: 1024px){
+    *,
+    *::after,
+    *::before {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      font-family: "Open Sans", sans-serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      padding: 0;
+      margin: 0;
+      font-family: "Oxygen", sans-serif;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+      font-size: 15px;
+      letter-spacing: 1px;
+      line-height: 1.9;
+      color: #999;
+      font-family: "Open Sans", sans-serif;
+    }
+
+    .background-cake{
+        height: 220px;
+        width: 100%;
+    }
+
+    .breadcrumb{
+        background:#e9ecef;
+        margin-top: -3em;
+    }
+
+    .breadcrumb ul{
+        display: flex;
+        list-style: none;
+        padding: 1em;
+    }
+
+    .breadcrumb ul li a {
+        color:#fd7272;
+        text-decoration: none;
+    }
+
+    .breadcrumb-item{
+        color:#6c757d;
+    }
+
+    .breadcrumb-item::before {
+        display: inline-block;
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+        color: #6c757d;
+        content: "/";
+    }
+
+    .navbar {
+      display: block;
+      position: absolute;
+      width: 100%;
+      z-index: 9999;
+    }
+
+    .logo {
+      display: flex;
+      margin: 1em;
+      justify-content: space-between;
+    }
+
+    .logo img {
+      width: 18%;
+    }
+
+    .navbar-brand {
+      margin-left: 1em;
+      font-size: 30px;
+      text-decoration: none;
+      color: white;
+      font-family: "Pacifico", cursive;
+      font-weight: 100;
+    }
+
+    .line {
+      width: 30px;
+      height: 3px;
+      background: white;
+      margin: 5px;
+    }
+
+    .nav-links {
+      display: none;
+      list-style: none;
+      width: 50%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      margin-left: auto;
+    }
+
+    .max-nav-links{
+      display: flex;
+      list-style: none;
+      margin-right: 2em;
+      margin-top: 1em;
+    }
+
+
+    .max-nav-links li{
+      padding: 0.5em;
+    }
+
+    .max-nav-links li a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      padding: 0.5em;
+      letter-spacing: 1px;
+      font-weight: 600;
+      background: rgba(4, 4, 4, 0.31);
+      padding: 8px 18px 9px;
+      border-radius: 100px;
+      box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.21);
+    }
+
+    .max-nav-links li a:hover {
+      color: #ffc845;
+    }
+
+    .hamburger {
+      display: none;
+      position: absolute;
+      cursor: pointer;
+      right: 9.1%;
+      top: 29%;
+      transform: translate(-5%, -50%);
+      z-index: 2;
+    }
+
+    .nav-links {
+      position: absolute;
+      background: linear-gradient(to right, #ffc845, #fe3859);
+      height: 100vh;
+      width: 100%;
+      flex-direction: column;
+      clip-path: circle(7% at 88% 2%);
+      -webkit-clip-path: circle(7% at 88% 3%);
+      transition: all 1s ease-out;
+      pointer-events: none;
+    }
+    .nav-links.open {
+      clip-path: circle(1000px at 90% -10%);
+      -webkit-clip-path: circle(1000px at 78% -10%);
+      pointer-events: all;
+      position: fixed;
+    }
+    .nav-links li {
+      opacity: 0;
+      padding: 1em;
+    }
+    .nav-links li a {
+      font-size: 22px;
+    }
+    .nav-links li:nth-child(1) {
+      transition: all 0.5s ease 0.2s;
+    }
+    .nav-links li:nth-child(2) {
+      transition: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(3) {
+      transition: all 0.5s ease 0.6s;
+    }
+    li.fade {
+      opacity: 1;
+    }
+
+    .about{
+        display: flex;
+    }
+
+    .about-img img{
+        width: 100%;
+    }
+
+    .about-grid{
+        margin-top: 1em;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        border-radius: 0.25rem;
+    }
+
+    .services {
+      border-top: 1px solid #dee2e6 !important;
+      padding-top: 2em;
+      text-align: center;
+      background-color: #f8f9fa !important;
+    }
+
+    .center-services{
+      display: flex;
+    }
+
+    .support-grid {
+      padding: 2em;
+    }
+
+    .fa-heart,
+    .fa-birthday-cake,
+    .fa-calendar, .fa-glass-martini  {
+      font-size: 52px;
+      color: #fe3859;
+      background: -webkit-linear-gradient(#ffc845, #fe3859);
+      background: -o-linear-gradient(#ffc845, #fe3859);
+      background: -moz-linear-gradient(#ffc845, #fe3859);
+      background: linear-gradient(#ffc845, #fe3859);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .support-grid h5 {
+      color: #343a40 !important;
+      font-size: 22px;
+      letter-spacing: 1px;
+      text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.48);
+      padding: 1em;
+    }
+
+    .support-grid p {
+      font-size: 15px;
+    }
+
+    .middle-section {
+      background: linear-gradient(#ffc845, #fe3859);
+    }
+
+    .middle-container {
+      text-align: center;
+      display: flex;
+    }
+
+    .center-img img {
+      width: 100%;
+      padding: 1em;
+    }
+
+    .center-text {
+      padding-top: 2em;
+    }
+
+    .center-text h2 {
+      font-size: 26px;
+      color: white;
+      font-weight: 500;
+      letter-spacing: 1px;
+      line-height: 1.2;
+    }
+
+    .counter-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+      padding-bottom: 3em;
+      width: 100%;
+    }
+
+    .counter-boxes{
+      display: flex;
+    }
+
+    .counter-box {
+      padding: 0em 10px;
+    }
+
+    .counter {
+      font-size: 3em;
+      font-weight: 800;
+      color: white;
+    }
+
+    .para-text {
+      font-size: 18px;
+      color: white;
+    }
+
+  footer{
+    background: url(/projects/cake-bakery/images/footer.jpg) no-repeat bottom;
+    -webkit-background-size: cover;
+    position: relative;
+    z-index: 0;
+    padding: 1.5em;
+  }
+
+  .footer-container{
+    padding: 1em;
+  }
+
+  .footer-list{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+  }
+
+  .footer-list li{
+    padding: 0.8em;
+  }
+
+  .footer-list li a i{
+    border-radius: 50%;
+    background: #fff;
+    color: #000;
+    text-align: center;
+    height: 39px;
+      width: 45px;
+      line-height: 2.4;
+  }
+
+  .footer-copyright{
+    font-size: 17px;
+    letter-spacing: 1px;
+    text-align: center;
+    color:#f8f9fa !important;
+  }
+
+  .deniscbrex{
+    text-decoration: none;
+    color: #ffc845;
+  }
+
+  .chef{
+    position: absolute;
+    width: 14%;
+    top: 1%;
+    left: 0;
+  }
+
+  }
+
+  @media screen and (min-width: 1100px){
+    *,
+    *::after,
+    *::before {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      font-family: "Open Sans", sans-serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      padding: 0;
+      margin: 0;
+      font-family: "Oxygen", sans-serif;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+      font-size: 15px;
+      letter-spacing: 1px;
+      line-height: 1.9;
+      color: #999;
+      font-family: "Open Sans", sans-serif;
+    }
+
+
+    .background-cake img{
+        height: 220px;
+        width: 100%;
+    }
+
+    .breadcrumb{
+        background:#e9ecef;
+        margin-top: -0.5em;
+    }
+
+    .breadcrumb ul{
+        display: flex;
+        list-style: none;
+        padding: 1em;
+        margin-top: 0.5em;
+    }
+
+    .breadcrumb ul li a {
+        color:#fd7272;
+        text-decoration: none;
+    }
+
+    .breadcrumb-item{
+        color:#6c757d;
+    }
+
+    .breadcrumb-item::before {
+        display: inline-block;
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+        color: #6c757d;
+        content: "/";
+    }
+
+
+    .navbar {
+      display: block;
+      position: absolute;
+      width: 100%;
+      z-index: 9999;
+    }
+
+    .logo {
+      display: flex;
+      margin: 1em;
+      justify-content: space-between;
+    }
+
+    .logo img {
+      width: 18%;
+    }
+
+    .navbar-brand {
+      margin-left: 1em;
+      font-size: 30px;
+      text-decoration: none;
+      color: white;
+      font-family: "Pacifico", cursive;
+      font-weight: 100;
+    }
+
+    .line {
+      width: 30px;
+      height: 3px;
+      background: white;
+      margin: 5px;
+    }
+
+    .nav-links {
+      display: none;
+      list-style: none;
+      width: 50%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      margin-left: auto;
+    }
+
+    .max-nav-links{
+      display: flex;
+      list-style: none;
+      margin-right: 2em;
+      margin-top: 1em;
+    }
+
+
+    .max-nav-links li{
+      padding: 0.5em;
+    }
+
+    .max-nav-links li a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      padding: 0.5em;
+      letter-spacing: 1px;
+      font-weight: 600;
+      background: rgba(4, 4, 4, 0.31);
+      padding: 8px 18px 9px;
+      border-radius: 100px;
+      box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.21);
+    }
+
+    .max-nav-links li a:hover {
+      color: #ffc845;
+    }
+
+    .hamburger {
+      display: none;
+      position: absolute;
+      cursor: pointer;
+      right: 9.1%;
+      top: 29%;
+      transform: translate(-5%, -50%);
+      z-index: 2;
+    }
+
+    .nav-links {
+      position: absolute;
+      background: linear-gradient(to right, #ffc845, #fe3859);
+      height: 100vh;
+      width: 100%;
+      flex-direction: column;
+      clip-path: circle(7% at 88% 2%);
+      -webkit-clip-path: circle(7% at 88% 3%);
+      transition: all 1s ease-out;
+      pointer-events: none;
+    }
+    .nav-links.open {
+      clip-path: circle(1000px at 90% -10%);
+      -webkit-clip-path: circle(1000px at 78% -10%);
+      pointer-events: all;
+      position: fixed;
+    }
+    .nav-links li {
+      opacity: 0;
+      padding: 1em;
+    }
+    .nav-links li a {
+      font-size: 22px;
+    }
+    .nav-links li:nth-child(1) {
+      transition: all 0.5s ease 0.2s;
+    }
+    .nav-links li:nth-child(2) {
+      transition: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(3) {
+      transition: all 0.5s ease 0.6s;
+    }
+    li.fade {
+      opacity: 1;
+    }
+
+    .about{
+        display: flex;
+    }
+
+    .about-img img{
+        width: 100%;
+    }
+
+    .about-grid{
+        margin-top: 1em;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        border-radius: 0.25rem;
+    }
+
+    .services {
+      border-top: 1px solid #dee2e6 !important;
+      padding-top: 2em;
+      text-align: center;
+      background-color: #f8f9fa !important;
+    }
+
+    .center-services{
+      display: flex;
+    }
+
+    .support-grid {
+      padding: 2em;
+    }
+
+    .fa-heart,
+    .fa-birthday-cake,
+    .fa-calendar, .fa-glass-martini  {
+      font-size: 52px;
+      color: #fe3859;
+      background: -webkit-linear-gradient(#ffc845, #fe3859);
+      background: -o-linear-gradient(#ffc845, #fe3859);
+      background: -moz-linear-gradient(#ffc845, #fe3859);
+      background: linear-gradient(#ffc845, #fe3859);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .support-grid h5 {
+      color: #343a40 !important;
+      font-size: 22px;
+      letter-spacing: 1px;
+      text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.48);
+      padding: 1em;
+    }
+
+    .support-grid p {
+      font-size: 15px;
+    }
+
+    .middle-section {
+      background: linear-gradient(#ffc845, #fe3859);
+    }
+
+    .middle-container {
+      text-align: center;
+      display: flex;
+    }
+
+    .center-img img {
+      width: 100%;
+      padding: 1em;
+    }
+
+    .center-text {
+      padding-top: 2em;
+    }
+
+    .center-text h2 {
+      font-size: 26px;
+      color: white;
+      font-weight: 500;
+      letter-spacing: 1px;
+      line-height: 1.2;
+    }
+
+    .counter-container {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 3em;
+      width: 100%;
+    }
+
+    .counter-boxes{
+      display: flex;
+    }
+
+    .counter-box {
+      padding: 0em 10px;
+    }
+
+    .counter {
+      font-size: 3em;
+      font-weight: 800;
+      color: white;
+    }
+
+    .para-text {
+      font-size: 18px;
+      color: white;
+    }
+
+  footer{
+    background: url(/projects/cake-bakery/images/footer.jpg) no-repeat bottom;
+    -webkit-background-size: cover;
+    position: relative;
+    z-index: 0;
+    padding: 1.5em;
+  }
+
+  .footer-container{
+    padding: 1em;
+  }
+
+  .footer-list{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+  }
+
+  .footer-list li{
+    padding: 0.8em;
+  }
+
+  .footer-list li a i{
+    border-radius: 50%;
+    background: #fff;
+    color: #000;
+    text-align: center;
+    height: 39px;
+      width: 45px;
+      line-height: 2.4;
+  }
+
+  .footer-copyright{
+    font-size: 17px;
+    letter-spacing: 1px;
+    text-align: center;
+    color:#f8f9fa !important;
+  }
+
+  .deniscbrex{
+    text-decoration: none;
+    color: #ffc845;
+  }
+
+  .chef{
+    position: absolute;
+    width: 10%;
+    top: 1%;
+    left: 0;
+  }
+
+  }
+
+  @media screen and (min-width: 1440px){
+    *,
+    *::after,
+    *::before {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      font-family: "Open Sans", sans-serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      padding: 0;
+      margin: 0;
+      font-family: "Oxygen", sans-serif;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+      font-size: 15px;
+      letter-spacing: 1px;
+      line-height: 1.9;
+      color: #999;
+      font-family: "Open Sans", sans-serif;
+    }
+
+    .background-cake img{
+        height: 220px;
+        width: 100%;
+    }
+
+    .breadcrumb{
+        background:#e9ecef;
+        margin-top: -0.5em;
+    }
+
+    .breadcrumb ul{
+        display: flex;
+        list-style: none;
+        padding: 1em;
+    }
+
+    .breadcrumb ul li a {
+        color:#fd7272;
+        text-decoration: none;
+    }
+
+    .breadcrumb-item{
+        color:#6c757d;
+    }
+
+    .breadcrumb-item::before {
+        display: inline-block;
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+        color: #6c757d;
+        content: "/";
+    }
+
+    .navbar {
+      display: block;
+      position: absolute;
+      width: 100%;
+      z-index: 9999;
+    }
+
+    .logo {
+      display: flex;
+      margin: 1em;
+      justify-content: space-between;
+    }
+
+    .logo img {
+      width: 18%;
+    }
+
+    .navbar-brand {
+      margin-left: 1em;
+      font-size: 30px;
+      text-decoration: none;
+      color: white;
+      font-family: "Pacifico", cursive;
+      font-weight: 100;
+    }
+
+    .line {
+      width: 30px;
+      height: 3px;
+      background: white;
+      margin: 5px;
+    }
+
+    .nav-links {
+      display: none;
+      list-style: none;
+      width: 50%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      margin-left: auto;
+    }
+
+    .max-nav-links{
+      display: flex;
+      list-style: none;
+      margin-right: 2em;
+      margin-top: 1em;
+    }
+
+
+    .max-nav-links li{
+      padding: 0.5em;
+    }
+
+    .max-nav-links li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 0.5em;
+      letter-spacing: 1px;
+      font-weight: 600;
+      background: rgba(4, 4, 4, 0.31);
+      padding: 8px 18px 9px;
+      border-radius: 100px;
+      box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.21);
+    }
+
+    .max-nav-links li a:hover {
+      color: #ffc845;
+    }
+
+    .hamburger {
+      display: none;
+      position: absolute;
+      cursor: pointer;
+      right: 9.1%;
+      top: 29%;
+      transform: translate(-5%, -50%);
+      z-index: 2;
+    }
+
+    .nav-links {
+      position: absolute;
+      background: linear-gradient(to right, #ffc845, #fe3859);
+      height: 100vh;
+      width: 100%;
+      flex-direction: column;
+      clip-path: circle(7% at 88% 2%);
+      -webkit-clip-path: circle(7% at 88% 3%);
+      transition: all 1s ease-out;
+      pointer-events: none;
+    }
+    .nav-links.open {
+      clip-path: circle(1000px at 90% -10%);
+      -webkit-clip-path: circle(1000px at 78% -10%);
+      pointer-events: all;
+      position: fixed;
+    }
+    .nav-links li {
+      opacity: 0;
+      padding: 1em;
+    }
+    .nav-links li a {
+      font-size: 22px;
+    }
+    .nav-links li:nth-child(1) {
+      transition: all 0.5s ease 0.2s;
+    }
+    .nav-links li:nth-child(2) {
+      transition: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(3) {
+      transition: all 0.5s ease 0.6s;
+    }
+    li.fade {
+      opacity: 1;
+    }
+
+    .about{
+        display: flex;
+    }
+
+    .about-img img{
+        width: 100%;
+    }
+
+    .about-grid{
+        margin-top: 1em;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        border-radius: 0.25rem;
+    }
+
+    .services {
+      border-top: 1px solid #dee2e6 !important;
+      padding-top: 2em;
+      text-align: center;
+      background-color: #f8f9fa !important;
+    }
+
+    .center-services{
+      display: flex;
+    }
+
+    .support-grid {
+      padding: 2em;
+    }
+
+    .fa-heart,
+    .fa-birthday-cake,
+    .fa-calendar, .fa-glass-martini  {
+      font-size: 52px;
+      color: #fe3859;
+      background: -webkit-linear-gradient(#ffc845, #fe3859);
+      background: -o-linear-gradient(#ffc845, #fe3859);
+      background: -moz-linear-gradient(#ffc845, #fe3859);
+      background: linear-gradient(#ffc845, #fe3859);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .support-grid h5 {
+      color: #343a40 !important;
+      font-size: 22px;
+      letter-spacing: 1px;
+      text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.48);
+      padding: 1em;
+    }
+
+    .support-grid p {
+      font-size: 15px;
+    }
+
+    .middle-section {
+      background: linear-gradient(#ffc845, #fe3859);
+    }
+
+    .middle-container {
+      text-align: center;
+      display: flex;
+    }
+
+    .center-img img {
+      width: 100%;
+      padding: 1em;
+    }
+
+    .center-text {
+      padding-top: 2em;
+    }
+
+    .center-text h2 {
+      font-size: 26px;
+      color: white;
+      font-weight: 500;
+      letter-spacing: 1px;
+      line-height: 1.2;
+    }
+
+    .counter-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+      padding-bottom: 3em;
+      width: 100%;
+    }
+
+    .counter-boxes{
+      display: flex;
+    }
+
+    .counter-box {
+      padding: 0em 10px;
+    }
+
+    .counter {
+      font-size: 3em;
+      font-weight: 800;
+      color: white;
+    }
+
+    .para-text {
+      font-size: 18px;
+      color: white;
+    }
+
+  footer{
+    background: url(/projects/cake-bakery/images/footer.jpg) no-repeat bottom;
+    -webkit-background-size: cover;
+    position: relative;
+    z-index: 0;
+    padding: 1.5em;
+  }
+
+  .footer-container{
+    padding: 1em;
+  }
+
+  .footer-list{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+  }
+
+  .footer-list li{
+    padding: 0.8em;
+  }
+
+  .footer-list li a i{
+    border-radius: 50%;
+    background: #fff;
+    color: #000;
+    text-align: center;
+    height: 39px;
+      width: 45px;
+      line-height: 2.4;
+  }
+
+  .footer-copyright{
+    font-size: 17px;
+    letter-spacing: 1px;
+    text-align: center;
+    color:#f8f9fa !important;
+  }
+
+  .deniscbrex{
+    text-decoration: none;
+    color: #ffc845;
+  }
+
+  .chef{
+    position: absolute;
+    width: 9%;
+    top: 1%;
+    left: 0;
+  }
+
+  }
